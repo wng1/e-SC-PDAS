@@ -99,7 +99,47 @@
         <Property name="DebugSuspended" default="true" type="Boolean" category="Debugging" description="" />
         <Property name="DebugPort" default="5005" type="Integer" category="Debugging" description="" />
     </Properties>
+    <!-- Properties for OphidiaContainer, Important details omitted -->
+    <!--
+  <Property name="ncores" default="" type="int" description=""/>
+	<Property name="exec_mode" default="" type="String" description=""/>
+	<Property name="hierarchy" default="" type="String" description=""/>
+	<Property name="base_time" default="" type="String" description=""/>
+	<Property name="units" default="" type="String" description=""/>
+	<Property name="calendar" default="" type="String" description=""/>
+	<Property name="month_lengths" default="" type="String" description=""/>
+	<Property name="leap_year" default="" type="int" description=""/>
+	<Property name="leap_month" default="" type="int" description=""/>
+	<Property name="vocabulary" default="" type="String" description=""/>
+	<Property name="compressed" default="" type="String" description=""/>
+	<Property name="objkey_filter" default="" type="String" description=""/>
 
+  <Property name="u" default="" type="String" description="username"/>
+	<Property name="p" default="" type="String" description="password"/>
+	<Property name="H" default="" type="String" description="host"/>
+	<Property name="P" default="" type="String" description="port"/>
+  <Property name="pid" default="" type="String" description="pid"/> 
+	
+  <Property name="container" default="test_eubrazil" type="String" description="ParameterOne"/>
+  <Property name="dim" default="lat|lon|time" type="String" description="ParameterTwo"/>
+	<Property name="exp_ndim" default="2" type="Integer" description="ParameterThree"/>
+  <Property name="host_partition" default="test" type="String" description="ParameterFour"/>
+  <Property name="dim_size" default="64|64|100" type="String" description="ParameterFive"/>    
+  <Property name="measure" default="tas" type="String" description="ParameterSix"/>
+  <Property name="measure_type" default="double" type="String" description="ParameterSeven"/>
+  <Property name="compressed" default="no" type="String" description="ParameterEight"/>
+  <Property name="filesystem" default="local" type="String" description="ParameterNine"/>
+	<Property name="concept_level" default="c|c|m" type="String" description="ParameterTen"/>
+  <Property name="nhost" default="1" type="Integer" description="ParameterEleven"/>
+  <Property name="ndbms" default="1" type="Integer" description="ParameterTweleve"/>
+  <Property name="ndb" default="1" type="Integer" description="Parameter12"/>
+  <Property name="nfrag" default="64" type="Integer" description="Parameter13"/>
+  <Property name="ntuple" default="64" type="Integer" description="Parameter14"/>
+  <Property name="run" default="yes" type="String" description="Parameter15"/>
+  <Property name="ncores" default="8" type="Integer" description="Parameter16"/>
+  <Property name="sessionid" default="" type="String" description="Parameter17"/>
+  <Property name="exec_mode" default="sync" type="String" description="Parameter18"/> --> 
+  
     <!-- Definition of all of the inputs to a service. The format is:   -->
     <!--                                                                -->
     <!-- <Input name="" type="" streaming=""/>                          -->
@@ -130,6 +170,7 @@
     <Outputs>
         <Output name="output-file" type="file-wrapper" streaming="false"/>
         <Output name="output-data" type="data-wrapper" streaming="false"/>
+    <!--<Output name="output-properties" type="properties-wrapper" /> -->
     </Outputs>
 
 </WorkflowService>
